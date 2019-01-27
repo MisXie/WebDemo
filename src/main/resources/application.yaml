@@ -1,0 +1,13 @@
+spring:
+  mvc:
+    view:
+      suffix: .jsp
+  servlet:
+    multipart:
+      max-file-size: 12MB #每一个文件最大值
+      max-request-size: 20MB   #一次上传的文件总大小
+server:
+  servlet:
+    context-path: /WebDemo
+
+
