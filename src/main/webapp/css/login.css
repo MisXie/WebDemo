@@ -1,0 +1,15 @@
+body{
+    width:100%;
+    margin: 0 auto;
+    background-image:url('../static/images/loginBackgroud.png')
+}
+
+.operForm {
+    text-align: center;
+    display: inline-block;
+    width: 35%;
+}
+#registerDlg{
+    text-align: center;
+    /*margin:0 auto;*/
+}

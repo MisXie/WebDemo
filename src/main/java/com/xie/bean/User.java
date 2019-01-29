@@ -5,7 +5,9 @@ package com.xie.bean;
  */
 public class User {
   private String username;
+  private String email;
   private String password;
+  private String sex;
 
   @Override
   public String toString() {
@@ -29,5 +31,22 @@ public class User {
 
   public void setPassword(String password) {
     this.password = password;
+  }
+
+  public String getSex() {
+    return sex;
+  }
+
+  public void setSex(String sex) {
+    this.sex = sex;
+  }
+
+
+  public String getEmail() {
+    return email;
+  }
+
+  public void setEmail(String email) {
+    this.email = email;
   }
 }

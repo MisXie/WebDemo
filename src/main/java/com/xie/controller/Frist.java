@@ -14,24 +14,12 @@ import java.util.Map;
 @Controller
 public class Frist {
 
-    @GetMapping("/")
-    public String welcome(){
-        return "/jsp/login";
-    }
-
     @GetMapping("/frist")
     public String frist(HttpServletRequest request){
         String contextPath = request.getSession().getServletContext().getContextPath();
         System.out.println(request.getParameter("username"));
         return "/jsp/first";
     }
-    @PostMapping("/login")
-    @ResponseBody
-    public Object login(HttpServletResponse response, User user){
 
-        System.out.println(response.getStatus());
-        System.out.println(user);
-        return user;
-    }
 
 }
