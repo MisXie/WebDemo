@@ -1,4 +1,13 @@
 spring:
+  redis:
+    database: 0
+    port: 6379
+    host: localhost
+    password:
+
+  cache:
+    type: redis
+
   mvc:
     view:
       suffix: .jsp
@@ -9,5 +18,4 @@ spring:
 server:
   servlet:
     context-path: /WebDemo
-
 
